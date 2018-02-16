@@ -23,7 +23,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       type: 'string',
@@ -56,10 +56,6 @@ module.exports = {
           short: 'runtime',
         },
       ],
-    },
-    router: {
-      type: 'confirm',
-      message: 'Install vue-router?',
     },
     lint: {
       type: 'confirm',
@@ -132,11 +128,6 @@ module.exports = {
       message:
         'Should we run `npm install` for you after the project has been created? (recommended)',
       choices: [
-        {
-          name: 'Yes, use NPM',
-          value: 'npm',
-          short: 'npm',
-        },
         {
           name: 'Yes, use Yarn',
           value: 'yarn',
